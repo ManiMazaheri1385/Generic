@@ -52,7 +52,12 @@ public class Main {
         System.out.println();
 
         notebookInventory.removeItemsById(softCoverNotebook.getId());
+        System.out.println();
         accessoryInventory.removeItemsById(lampshade.getId());
+
+        System.out.println();
+        System.out.println("------------------------------------------------------------------------");
+        System.out.println();
 
         System.out.println("Total book price: " + String.format("%.2f", calculateTotalPrice(bookInventory)));
         System.out.println("Total notebook price: " + String.format("%.2f", calculateTotalPrice(notebookInventory)));

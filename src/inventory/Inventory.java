@@ -24,9 +24,11 @@ public class Inventory <T extends Product> {
         for (T item : items) {
             if (item.getId().equals(id)) {
                 items.remove(item);
+                System.out.println("Item removed.");
                 return;
             }
         }
+        System.out.println("Item not found.");
     }
 
     public T findItemsById(String id) {
